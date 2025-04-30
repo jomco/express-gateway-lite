@@ -86,8 +86,8 @@
     "rimraf": "^3.0.2",
     "should": "^13.2.3",
     "sinon": "^7.5.0",
-    "superagent": "^5.3.1",
-    "supertest": "^6.3.3",
+    "superagent": "^10.2.0",
+    "supertest": "^6.3.4",
     "supertest-session": "^4.1.0",
     "tmp": "^0.1.0"
   }
