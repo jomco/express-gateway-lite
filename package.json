@@ -89,6 +89,6 @@
     "superagent": "^10.2.0",
     "supertest": "^6.3.4",
     "supertest-session": "^4.1.0",
-    "tmp": "^0.1.0"
+    "tmp": "^0.2.4"
   }
 }
