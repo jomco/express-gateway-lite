@@ -51,7 +51,7 @@
     "express": "^4.19.2",
     "express-rate-limit": "^2.14.2",
     "form-urlencoded": "^4.5.1",
-    "http-proxy": "^1.18.0",
+    "http-proxy-3": "^1.21.0",
     "ioredis": "^4.28.5",
     "js-yaml": "^3.14.1",
     "json-schema-merge-allof": "^0.6.0",
