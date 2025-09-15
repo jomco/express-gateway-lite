@@ -9,5 +9,6 @@ db:
 
 crypto:
   cipherKey: sensitiveKey
+  cipherSalt: sensitiveSalt
   algorithm: aes256
   saltRounds: 10

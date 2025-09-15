@@ -32,6 +32,10 @@
           "type": "string",
           "default": "sensitiveKey"
         },
+        "cipherSalt": {
+          "type": "string",
+          "default": "sensitiveSalt"
+        },
         "algorithm": {
           "type": "string",
           "default": "aes256"
