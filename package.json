@@ -55,7 +55,7 @@
     "ioredis": "^4.28.5",
     "js-yaml": "^4.1.1",
     "json-schema-merge-allof": "^0.6.0",
-    "json-schema-ref-parser": "^9.0.9",
+    "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "lodash.flatmap": "^4.5.0",
     "minimatch": "^3.1.2",
     "parent-require": "^1.0.0",
