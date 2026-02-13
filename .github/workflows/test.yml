@@ -13,7 +13,7 @@ jobs:
       with:
         node-version: 22
 
-    - uses: supercharge/redis-github-action@1.4.0
+    - uses: supercharge/redis-github-action@1.8.1
       with:
         redis-version: 4
 
