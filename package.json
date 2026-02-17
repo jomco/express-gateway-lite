@@ -42,7 +42,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "ajv": "^6.12.6",
+    "ajv": "^8.18.0",
     "ajv-keywords": "^3.5.2",
     "axios": "^1.6.1",
     "bcryptjs": "^2.4.3",
