@@ -57,7 +57,7 @@
     "json-schema-merge-allof": "^0.6.0",
     "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "lodash.flatmap": "^4.5.0",
-    "minimatch": "^3.1.2",
+    "minimatch": "^10.2.1",
     "parent-require": "^1.0.0",
     "passport": "^0.6.0",
     "passport-http": "0.3.0",
