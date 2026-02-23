@@ -42,6 +42,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "axios": "^1.6.1",
@@ -55,9 +56,8 @@
     "ioredis": "^4.28.5",
     "js-yaml": "^4.1.1",
     "json-schema-merge-allof": "^0.6.0",
-    "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "lodash.flatmap": "^4.5.0",
-    "minimatch": "^3.1.2",
+    "minimatch": "^10.2.2",
     "parent-require": "^1.0.0",
     "passport": "^0.6.0",
     "passport-http": "0.3.0",
