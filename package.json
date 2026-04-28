@@ -46,6 +46,7 @@
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "axios": "^1.6.1",
+    "base-x": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "connect-ensure-login": "0.1.1",
     "cors": "^2.8.5",
@@ -63,8 +64,7 @@
     "passport-http": "0.3.0",
     "rate-limit-redis": "^2.1.0",
     "semver": "^7.5.3",
-    "uuid": "^3.4.0",
-    "uuid62": "^0.2.1",
+    "uuid": "^14.0.0",
     "vhost": "3.0.2"
   },
   "devDependencies": {
