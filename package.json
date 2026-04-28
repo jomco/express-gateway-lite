@@ -64,7 +64,6 @@
     "passport-http": "0.3.0",
     "rate-limit-redis": "^2.1.0",
     "semver": "^7.5.3",
-    "uuid": "^14.0.0",
     "vhost": "3.0.2"
   },
   "devDependencies": {

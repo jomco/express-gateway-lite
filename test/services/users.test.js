@@ -1,5 +1,5 @@
 const should = require('should');
-const uuid = require('uuid');
+const { randomUUID } = require('crypto');
 const redisConfig = require('../../lib/config').systemConfig.db.redis;
 const services = require('../../lib/services');
 const userService = services.user;
@@ -108,7 +108,7 @@ describe('User service tests', () => {
     });
 
     it('should not get user by invalid userId', () => {
-      return userService.get(uuid.v4())
+      return userService.get(randomUUID())
         .then(function (user) {
           should.exist(user);
           user.should.eql(false);
@@ -327,9 +327,9 @@ describe('User service tests', () => {
 
 function createRandomUserObject() {
   return {
-    username: uuid.v4(),
-    firstname: uuid.v4(),
-    lastname: uuid.v4(),
-    email: `${uuid.v4()}@testmail.it`
+    username: randomUUID(),
+    firstname: randomUUID(),
+    lastname: randomUUID(),
+    email: `${randomUUID()}@testmail.it`
   };
 }
