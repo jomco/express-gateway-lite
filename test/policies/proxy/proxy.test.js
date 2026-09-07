@@ -23,7 +23,7 @@ describe('@proxy policy', () => {
 
       backendServerPort = ports[0];
 
-      expressApp.all('*', express.json(), function (req, res) {
+      expressApp.all('{*path}', express.json(), function (req, res) {
         if (req.headers['x-test']) {
           res.setHeader('x-test', req.header('x-test'));
         }
@@ -197,9 +197,9 @@ describe('@proxy policy', () => {
           gatewayConfig: {
             http: { port: 0 },
             apiEndpoints: {
-              testStar: { path: '/hello/v1/api/endpointStar*' },
-              testStarSlash: { path: '/hello/v1/api/endpointSlashedStar/*' },
-              testTwoStars: { path: '/hello/v1/api/endpointTwoStar/*/then/*' },
+              testStar: { path: '/hello/v1/api/endpointStar{*path}' },
+              testStarSlash: { path: '/hello/v1/api/endpointSlashedStar{/*path}' },
+              testTwoStars: { path: '/hello/v1/api/endpointTwoStar{/*path1}/then{/*path2}' },
               test: { path: '/hello/v1/api/endpoint' }
             },
             serviceEndpoints: {
