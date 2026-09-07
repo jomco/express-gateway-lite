@@ -28,7 +28,7 @@
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 22"
+    "node": ">= 24"
   },
   "scripts": {
     "start": "node lib/index.js",
