@@ -18,7 +18,7 @@ describe('@modifier policy', () => {
 
       backendServerPort = ports[0];
 
-      expressApp.all('*', express.json(), express.urlencoded(), function (req, res) {
+      expressApp.all('/{*path}', express.json(), express.urlencoded({ extended: true }), function (req, res) {
         if (req.header('r-test')) {
           res.setHeader('r-test', req.header('r-test'));
         }
@@ -28,7 +28,7 @@ describe('@modifier policy', () => {
         }
 
         res.setHeader('x-test', 'hello');
-        res.status(200).json(Object.assign({ url: req.url }, req.body));
+        res.status(200).json(Object.assign({ url: req.url }, req.body || {}));
       });
 
       backendServer = expressApp.listen(backendServerPort, done);

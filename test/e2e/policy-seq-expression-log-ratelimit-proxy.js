@@ -89,7 +89,7 @@ describe('E2E: proxy, log, expression, rate-limit policies', () => {
         app = apps.app;
 
         const backendApp = express();
-        backendApp.all('*', (req, res) => {
+        backendApp.all('{*path}', (req, res) => {
           spy(req.headers);
           res.send();
         });

@@ -72,7 +72,7 @@ describe('path resolution for specific and general domains', () => {
 
       before('setup', () => {
         config.gatewayConfig = configTemplate;
-        config.gatewayConfig.apiEndpoints.test.paths = '/admin/*';
+        config.gatewayConfig.apiEndpoints.test.paths = '/admin/{*path}';
         return helper.setup({ config, plugins });
       });
 
@@ -214,7 +214,7 @@ describe('path resolution for specific and general domains', () => {
 
       before('setup', () => {
         config.gatewayConfig = configTemplate;
-        config.gatewayConfig.apiEndpoints.test.paths = ['/admin', '/admin/*'];
+        config.gatewayConfig.apiEndpoints.test.paths = ['/admin', '/admin/{*path}'];
         return helper.setup({ config, plugins });
       });
 

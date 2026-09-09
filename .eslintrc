@@ -33,8 +33,7 @@
       {
         "ignoreModuleItems": [
           "crypto.createCipher",
-          "crypto.createDecipher",
-          "url.parse"
+          "crypto.createDecipher"
         ]
       }
     ]

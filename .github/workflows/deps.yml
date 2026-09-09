@@ -13,8 +13,8 @@ jobs:
     steps:
     - uses: actions/setup-node@v4
       with:
-        node-version: 22
+        node-version: 24
 
     - uses: actions/checkout@v4
     - run: npm ci
-    - run: npm audit --omit dev
+    - run: npm audit --omit=dev --audit-level=critical

@@ -11,7 +11,7 @@ config.gatewayConfig = {
   apiEndpoints: {
     test_default: {
       host: '*',
-      paths: ['/*']
+      paths: ['/{*path}']
     }
   },
   policies: ['test-policy'],

@@ -28,7 +28,7 @@
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 22"
+    "node": ">= 24"
   },
   "scripts": {
     "start": "node lib/index.js",
@@ -49,7 +49,7 @@
     "bcryptjs": "^2.4.3",
     "connect-ensure-login": "0.1.1",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
+    "express": "^5.2.1",
     "express-rate-limit": "^2.14.2",
     "form-urlencoded": "^4.5.1",
     "http-proxy-3": "^1.21.0",
@@ -88,5 +88,8 @@
     "supertest": "^6.3.4",
     "supertest-session": "^4.1.0",
     "tmp": "^0.2.6"
+  },
+  "allowScripts": {
+    "puppeteer": false
   }
 }
